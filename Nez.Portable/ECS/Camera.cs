@@ -52,6 +52,7 @@ namespace Nez
 		/// shortcut to entity.transform.rotation
 		/// </summary>
 		/// <value>The rotation.</value>
+		[Range(0, 2 * (float)Math.PI)]
 		public float Rotation
 		{
 			get => Entity.Transform.Rotation;
@@ -101,7 +102,7 @@ namespace Nez
 		/// minimum non-scaled value (0 - float.Max) that the camera zoom can be. Defaults to 0.3
 		/// </summary>
 		/// <value>The minimum zoom.</value>
-		[Range(0, 30)]
+		[Range(1, 30)]
 		public float MinimumZoom
 		{
 			get => _minimumZoom;
@@ -112,7 +113,7 @@ namespace Nez
 		/// maximum non-scaled value (0 - float.Max) that the camera zoom can be. Defaults to 3
 		/// </summary>
 		/// <value>The maximum zoom.</value>
-		[Range(0, 30)]
+		[Range(1.1, 30)]
 		public float MaximumZoom
 		{
 			get => _maximumZoom;
