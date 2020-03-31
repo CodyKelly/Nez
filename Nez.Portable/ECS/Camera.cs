@@ -113,7 +113,7 @@ namespace Nez
 		/// maximum non-scaled value (0 - float.Max) that the camera zoom can be. Defaults to 3
 		/// </summary>
 		/// <value>The maximum zoom.</value>
-		[Range(1.1, 30)]
+		[Range(1.1f, 30)]
 		public float MaximumZoom
 		{
 			get => _maximumZoom;
