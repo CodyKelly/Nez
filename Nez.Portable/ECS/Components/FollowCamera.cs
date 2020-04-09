@@ -190,6 +190,12 @@ namespace Nez
 		{
 			_targetEntity = targetEntity;
 			_cameraStyle = cameraStyle;
+
+			CenterOnTarget();
+		}
+
+		public void CenterOnTarget()
+		{
 			var cameraBounds = Camera.Bounds;
 
 			switch (_cameraStyle)
