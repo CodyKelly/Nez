@@ -209,6 +209,8 @@ namespace Nez
 					Deadzone = new RectangleF(cameraBounds.Width / 2, cameraBounds.Height / 2, 10, 10);
 					break;
 			}
+
+			Camera.SetPosition(_targetEntity.Position);
 		}
 
 		/// <summary>
